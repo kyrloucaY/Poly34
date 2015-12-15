@@ -1,0 +1,58 @@
+paper-drawer-panel {
+    --paper-drawer-panel-left-drawer-container: {
+        background-color: #ff9cc1;
+    }
+}
+
+.pdrawer {
+    background-color: #28ff09;
+}
+
+.pheader {
+    background-color: #afffbc;
+}
+
+.container {
+    background-color: #ff7947;
+    display: inline-flex;
+    border-style: solid;
+    border-width: 3px;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.kIronPage {
+    background-color: #39e4ff;
+    width: 100vw;
+    display: inline-flex;
+}
+
+#p1 {
+    background-color: #00c853;
+}
+
+.div1 {
+    background-color: #fff020;
+    width: 100vw;
+
+}
+.div2 {
+    background-color: #fff020;
+    width: 80vw;
+
+}
+
+#b1 {
+    background: green;
+    color: yellow;
+    flex-grow: 4;
+}
+.maxHeight{
+    height:100vh;
+}
+.d4 {
+        align-self: stretch;
+    flex-grow: 1;
+    background-color: #5e35b1;
+}

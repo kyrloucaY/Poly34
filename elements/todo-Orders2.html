@@ -1,0 +1,53 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+
+<dom-module id="todo-orders2">
+
+    <template>
+        <style>
+            /* CSS rules for your element */
+            .main {
+                background-color: #a4ff71;
+                color: black;
+                height: 100vh;
+            }
+
+            .para1 {
+                font-size: 40px;
+            }
+        </style>
+        <div class="fullbleed vertical layout main">
+            <div class="flex-1 self-end">orders 2332</div>
+            <div class="flex-2 self-stretch">{{greeting}}</div>
+        </div>
+        <!--div class="fullbleed vertical layout container">
+            <div class="elem flex-2 self-start" style="background-color: beige">1 BBADD aad lpah w</div>
+            <div class="elem flex self-start" style="background-color:red">2 DDDbeta</div>
+            <div class="elem flex-4" style="background-color: #c4caff">3 thir</div>
+            <div class="elem flex self-stretch" style="background-color: greenyellow">4 asef thir</div>
+        </div-->
+
+    </template>
+
+    <script>
+        // element registration
+        Polymer({
+            is: "todo-orders2",
+
+            // add properties and methods on the element's prototype
+
+            properties: {
+                // declare properties for the element's public API
+                greeting: {
+                    type: String,
+                    value: "Hello todo-orders2!"
+                }
+            }
+        });
+    </script>
+
+</dom-module>

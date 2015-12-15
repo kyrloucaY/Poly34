@@ -1,0 +1,54 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+
+
+<dom-module id="todo-element">
+
+    <template>
+        <style>
+            /* CSS rules for your element */
+            .cnt {
+                display: inline-flex;
+                color: black;
+                background-color: #fffed9;
+                min-height: 40px;
+                height:100vh;
+            }
+
+            .elem {
+                min-width: 10px;
+            }
+        </style>
+
+
+        <!-- local DOM for your element -->
+        <div class="fullbleed vertical layout cnt">
+            <div class="elem flex-2 self-start" style="background-color: beige">1 fff lpah w</div>
+            <div class="elem flex self-start" style="background-color:red">2 DDDbeta</div>
+            <div class="elem flex-4" style="background-color: #c4caff">3 thir</div>
+            <div class="elem flex self-stretch" style="background-color: greenyellow">4 asef thir</div>
+        </div>
+
+
+    </template>
+
+    <script>
+        // element registration
+        Polymer({
+            is: "todo-element",
+
+            // add properties and methods on the element's prototype
+
+            properties: {
+                // declare properties for the element's public API
+                greeting: {
+                    type: String,
+                    value: "Hello!"
+                }
+            }
+        });
+    </script>
+
+</dom-module>
+

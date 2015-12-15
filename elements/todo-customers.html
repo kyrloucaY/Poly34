@@ -1,0 +1,45 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+
+<dom-module id="todo-customers">
+
+    <template>
+        <style>
+            /* CSS rules for your element */
+            .main {
+                background-color: #ffd9f7;
+                color: black;
+                hheight: 100vh;
+            }
+            .para1{
+                font-size: 40px;
+            }
+        </style>
+        <div class="main">
+            <p class="para1">Customers Form showing</p>
+            <div>{{greeting}}</div> <!-- data bindings in local DOM -->
+        </div>
+
+    </template>
+
+    <script>
+        // element registration
+        Polymer({
+            is: "todo-customers",
+
+            // add properties and methods on the element's prototype
+
+            properties: {
+                // declare properties for the element's public API
+                greeting: {
+                    type: String,
+                    value: "Hello Customers!"
+                }
+            }
+        });
+    </script>
+
+</dom-module>
