@@ -1,0 +1,54 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="todo-element.html">
+<dom-module id="todo-repeat-card">
+
+
+  <template>
+
+
+    <template is="dom-repeat" items="{{cards}}">
+      <style>
+        /* CSS rules for your element */
+        .main {
+          background-color: bisque;
+          color: black;
+        }
+
+        .para1 {
+          font-size: 40px;
+        }
+      </style>
+      <div class="flex layout horizontal main justify-content=space between "  >
+        <todo-element class="flex-1" user="{{item.name}}" date="{{item.date}}">element</todo-element>
+      </div>
+    </template>
+
+
+  </template>
+
+  <script>
+    // element registration
+    Polymer({
+      is: "todo-repeat-card",
+
+      // add properties and methods on the element's prototype
+
+      properties: {
+        // declare properties for the element's public API
+        greeting: {
+          type: String,
+          value: "repeat card"
+        }
+      },
+      ready: function () {
+        this.cards = [{name: "geroge",date:"01/05/2015"}, {name: "frank",date:"01/06/2016"}, {name: "mark",date:"01/07/2015"}];
+      }
+    });
+  </script>
+
+</dom-module>

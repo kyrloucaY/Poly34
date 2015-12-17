@@ -25,13 +25,13 @@
 
 </head>
 
-<body class="fullbleed layout vertical">
+<body class="flex fullbleed">
 
-<paper-drawer-panel class="flex pdrawer" drawer>
+<paper-drawer-panel class="flex main" left-drawer>
     <div drawer>
-        <paper-button id="b1">Press P</paper-button>
+        <paper-button id="b1">Press fP</paper-button>
     </div>
-    <paper-header-panel class="flex pheader" mode="waterfall-tall" main>
+    <paper-header-panel class="flex" mode="waterfall-tall" main>
         <paper-toolbar class="medium-tall">
             <span style="margin-right: 20px">Search2</span>
             <!--span class="flex"></span-->
@@ -44,19 +44,15 @@
                 <paper-tab>ONE</paper-tab>
                 <paper-tab>TWO</paper-tab>
                 <paper-tab>Three</paper-tab>
+                <paper-tab>Four</paper-tab>
             </paper-tabs>
         </paper-toolbar>
-        <div class="container">
-
-            <iron-pages id="pages" selected="0" class="kIronPage">
-
-                <div class="div1"> One
-                    <p id="p1">ffasdf container ssaea</p>
-                </div>
-                <div class="div2"> two</div>
-                <div class="div2"> three</div>
-
-
+        <div class="layout vertical flex maxHeight">The container
+            <iron-pages flex id="pages" selected="0" class="container">
+                <todo-element class="d4"></todo-element>
+                <todo-orders2 class="d4"></todo-orders2>
+                <todo-customers class="d4"></todo-customers>
+                <div class="d4"> fourth</div>
             </iron-pages>
         </div>
     </paper-header-panel>
